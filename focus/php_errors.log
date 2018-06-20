@@ -1,0 +1,31 @@
+[19-Jun-2018 16:19:59 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/today/var/cache/" is not writable in /var/www/html/today/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/today/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/today/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/t...')
+#2 /var/www/html/today/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/today/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/today/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/today/vendor/magento/framework/App/Cache/Frontend/Pool.php(67): Magento\Framework\App\Cac in /var/www/html/today/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:26:19 UTC] PHP Fatal error:  Class 'TQT\Hello\Controller\Index\Magento\Framework\App\Action\Action' not found in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php on line 5
+[19-Jun-2018 17:33:10 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to TQT\Hello\Controller\Index\Index::__construct() must implement interface Magento\Framework\App\RequestInterface, none given, called in /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php:12
+Stack trace:
+#0 /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php(14): TQT\Hello\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context))
+#1 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): TQT\Hello\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context))
+#2 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('TQT\\Hello\\Contr...', Array)
+#3 /var/www/html/today/vendor/magento/framework/ObjectManager/ObjectManage in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php on line 12
+[19-Jun-2018 17:34:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to TQT\Hello\Controller\Index\Index::__construct() must implement interface Magento\Framework\App\RequestInterface, none given, called in /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php:12
+Stack trace:
+#0 /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php(14): TQT\Hello\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context))
+#1 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): TQT\Hello\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context))
+#2 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('TQT\\Hello\\Contr...', Array)
+#3 /var/www/html/today/vendor/magento/framework/ObjectManager/ObjectManage in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php on line 12
+[19-Jun-2018 23:55:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to TQT\Hello\Controller\Index\Index::__construct() must be an instance of Magento\Framework\View\Result\PageFactory, none given, called in /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Delete/Interceptor.php on line 14 and defined in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php:14
+Stack trace:
+#0 /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Delete/Interceptor.php(14): TQT\Hello\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\App\Request\Http))
+#1 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): TQT\Hello\Controller\Index\Delete\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('TQT\\Hello\\ in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php on line 14
+[20-Jun-2018 00:28:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 4 passed to TQT\Hello\Controller\Index\Index::__construct() must be an instance of Magento\Framework\Registry, none given, called in /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php:16
+Stack trace:
+#0 /var/www/html/today/generated/code/TQT/Hello/Controller/Index/Index/Interceptor.php(14): TQT\Hello\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\App\Request\Http), Object(Magento\Framework\View\Result\PageFactory))
+#1 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): TQT\Hello\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\App\Request\Http), Object(Magento\Framework\View\Result\PageFactory))
+#2 /var/www/html/today/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(66): in /var/www/html/today/app/code/TQT/Hello/Controller/Index/Index.php on line 16
